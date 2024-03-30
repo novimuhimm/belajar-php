@@ -1,0 +1,96 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid black; */
+}
+
+.container {
+    background-color: #f5f229;
+    min-height: 100vh;
+    padding: 35px 0px 0px;
+}
+.konten {
+    background-color: #EEEEEE;
+    min-height: fit-content;
+    border-radius: 5px;
+    padding: 0px 10px 25px;
+    margin: 0px auto;
+    width: 90%;
+}
+h1 {
+    text-align: center;
+    padding: 25px 0px;
+}
+.btn {
+    margin: 10px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button {
+    padding: 10px;
+    border-radius: 5px;
+}
+button:hover, button:focus {
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+/* STYLE UNTUK PRODUCT - TABLE */
+table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+thead {
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid black;
+    background-color: #76ABAE;
+}
+
+td {
+    padding: 5px;
+}
+
+/* STYLE UNTUK PRODUCTARRAY */
+h2 {
+    text-align: center;
+    margin: 35px 0px 25px;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    margin: 15px 10px;
+}
+.card {
+    margin: 15px 10px;
+    padding: 25px;
+    text-align: center;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background-color: #55c2e0;
+}
+#produk-card {
+    display: none;
+}
+
+@media screen and (max-width : 576px) {
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+}
+@media screen and (max-width : 350px) {
+    .container {
+        min-width: fit-content;
+        min-height: 2000px;
+    }
+    .row{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 5px;
+    }
+}
